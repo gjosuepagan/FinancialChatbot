@@ -1,0 +1,82 @@
+[
+  {
+    "prompt": "Hi Gemma, I want to start saving money. Where should I begin?",
+    "response": "The best place to start is by preparing for emergencies. Do you have any money set aside for unexpected expenses, like medical bills or car repairs? It’s a good idea to build an emergency fund first."
+  },
+  {
+    "prompt": "What’s an emergency fund, and how much should I save?",
+    "response": "An emergency fund is a savings account specifically for unexpected expenses. Ideally, you should aim to save three to six months' worth of essential living expenses. For example, if your monthly bills are $2,000, you’d need $6,000 to $12,000 in an emergency fund."
+  },
+  {
+    "prompt": "That sounds like a lot of money. How can I save that much?",
+    "response": "It does sound like a lot, but you don’t need to save it all at once. Start small—set a goal to save $500, then build from there. You can track your spending to see where you can cut back, and save the difference."
+  },
+  {
+    "prompt": "I want to track my spending. How should I do it?",
+    "response": "You can use a spreadsheet, an app, or even a notebook to track your spending. List your fixed expenses like rent and groceries, and variable ones like dining out. Once you see where your money is going, you can adjust to save more."
+  },
+  {
+    "prompt": "What percentage of my income should go to savings?",
+    "response": "A good rule of thumb is the 50/30/20 rule: 50% for needs, 30% for wants, and 20% for savings and investments. You can adjust it based on your goals, such as focusing more on saving for an emergency fund first."
+  },
+  {
+    "prompt": "How can I stick to my savings plan when unexpected expenses come up?",
+    "response": "If an unexpected expense arises, try to cover it with your emergency fund instead of dipping into your regular savings. If your emergency fund isn’t fully built yet, you can prioritize replenishing it once the expense is handled."
+  },
+  {
+    "prompt": "When should I start investing?",
+    "response": "You should focus on building your emergency fund first. Once you’ve saved enough for emergencies (three to six months of expenses), you can start investing any extra money in low-risk investments like index funds or retirement accounts."
+  },
+  {
+    "prompt": "What’s the difference between saving and investing?",
+    "response": "Saving is setting aside money for short-term needs, like an emergency fund. Investing is putting money into assets like stocks or bonds to grow your wealth over the long term. Start with savings, then move on to investing when you're ready."
+  },
+  {
+    "prompt": "How can I increase my savings rate without feeling deprived?",
+    "response": "You can increase your savings rate by automating transfers to your savings account, starting small and increasing over time. Budgeting for fun (like 10-15% of your income) also helps you enjoy life without guilt while still saving."
+  },
+  {
+    "prompt": "What types of accounts should I use for my savings?",
+    "response": "For short-term goals like an emergency fund, a high-yield savings account is a good option. For long-term goals like retirement, consider opening a retirement account (401(k) or IRA) or investing in low-cost index funds."
+  },
+  {
+    "prompt": "How can I save for multiple goals at once?",
+    "response": "You can split your savings by setting different percentages for each goal. For example, after building your emergency fund, allocate 50% to long-term investing, 20% to home improvement, and 30% for a fun or travel fund."
+  },
+  {
+    "prompt": "What are some easy ways to reduce my monthly expenses?",
+    "response": "Review your subscriptions and cancel any you don't use, cook more meals at home, and look for better deals on insurance or utilities. Small changes can add up over time and free up money for savings."
+  },
+  {
+    "prompt": "Is it okay to spend money on fun things while I’m saving?",
+    "response": "Absolutely! It’s important to balance saving and enjoying life. Allocate a portion of your leftover money (10-15%) for fun activities. This way, you can treat yourself without feeling guilty."
+  },
+  {
+    "prompt": "What should I do once I’ve saved enough for emergencies?",
+    "response": "Once your emergency fund is fully funded, start focusing more on investing. You can also increase your budget for fun or other goals, like saving for a home, while still growing your investments."
+  },
+  {
+    "prompt": "How can I avoid lifestyle inflation as my income increases?",
+    "response": "As your income grows, keep your essential spending consistent and allocate the extra money toward savings and investments. You can increase your fun budget a bit, but avoid increasing your spending too much too fast."
+  },
+  {
+    "prompt": "How much should I save for retirement?",
+    "response": "A common goal is to save at least 15% of your income for retirement, starting as early as possible. If your employer offers a retirement plan with a match, try to contribute enough to get the full match first."
+  },
+  {
+    "prompt": "How can I stay motivated to save over time?",
+    "response": "Set small, achievable goals and celebrate milestones. Seeing progress, like saving your first $500 or reaching 50% of your emergency fund goal, helps keep you motivated. Also, keep reminding yourself of the peace of mind it will bring."
+  },
+  {
+    "prompt": "What should I do if I’m struggling to save money?",
+    "response": "Start by tracking your expenses and see if there are areas where you can cut back. Even small adjustments, like making coffee at home or packing lunch, can help. Focus on consistency, not perfection, and build momentum over time."
+  },
+  {
+    "prompt": "What’s the best way to automate my savings?",
+    "response": "You can set up automatic transfers from your checking account to your savings account each payday. Start with a small amount and increase it as your income grows. This way, saving becomes effortless and consistent."
+  },
+  {
+    "prompt": "What should I prioritize if I have debt but also want to save?",
+    "response": "If you have high-interest debt, prioritize paying it off first while still saving a small amount, like $500, for emergencies. Once the debt is under control, shift your focus to building up your emergency fund and then investing."
+  }
+]
