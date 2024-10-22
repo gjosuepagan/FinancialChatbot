@@ -1,4 +1,5 @@
 from PyPDF2 import PdfReader
+import os
 
 # Load and extract text from a PDF
 reader = PdfReader('data/raw_pdfs/financial_document.pdf')
