@@ -2,7 +2,6 @@ import os
 from PyPDF2 import PdfReader
 from sentence_transformers import SentenceTransformer
 from langchain.text_splitter import CharacterTextSplitter
-from pinecone import PineconeClient
 import pinecone
 
 #Connecting Pinecone
@@ -53,6 +52,6 @@ for pdf in raw_pdfs:
             pinecone_index.upsert(vectors=[(chunk_id, embedding)])
 
         print(f'Embeddings for {pdf} in Pinecone')
-        
+
     except Exception as e:
         print(f"Error processing {pdf}: {e}")
