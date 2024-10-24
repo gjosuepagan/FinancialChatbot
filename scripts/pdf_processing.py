@@ -21,7 +21,7 @@ if index_name not in pc.list_indexes().names():
             region='us-east-1'  # Use the region that suits you
         )
     )
-pinecone_index = pc.index(index_name)
+pinecone_index = pc.Index(index_name)
 
 # Embedding text chunk with SentenceTransformer
 embedding_model = SentenceTransformer('all-MiniLM-L6-v2')
