@@ -59,7 +59,7 @@ for pdf in raw_pdfs:
         print(f"Processed and saved: {txt_filename}")
 
         # Chunk embedding
-        embeddings = embedding_model.encode(text_chunks_show_progress_bar=True)
+        embeddings = embedding_model.encode(sentences=text_chunks, text_chunks_show_progress_bar=True)
 
         # Uploading to Pinecone
         for i,embedding in enumerate(embeddings):
