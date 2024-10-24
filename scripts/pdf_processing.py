@@ -3,10 +3,25 @@ from PyPDF2 import PdfReader
 from sentence_transformers import SentenceTransformer
 from langchain.text_splitter import CharacterTextSplitter
 import pinecone
+from pinecone import Pinecone, ServerlessSpec
 
 #Connecting Pinecone
-pinecone.init(api_key='pcsk_6t5DTe_G5S8dt9DpQQqdXTYeVWrY61j1u4rQa7rXPqLBrmq9YTNpVw9b84cYLuK2j8uX2G')
-pinecone_index = pinecone.Index("pdf_vectorised")
+pc = Pinecone(
+        api_key=os.environ.get("pcsk_6t5DTe_G5S8dt9DpQQqdXTYeVWrY61j1u4rQa7rXPqLBrmq9YTNpVw9b84cYLuK2j8uX2GY")
+    )
+
+index_name = 'pdf-vectorised'
+if index_name not in pc.list_indexes().names():
+    pc.create_index(
+        name=index_name, 
+        dimension=384,  # Change this to match your embedding size (e.g., 384 for MiniLM)
+        metric='cosine',  # Use cosine or another similarity metric
+        spec=ServerlessSpec(
+            cloud='aws',  # You can change the cloud provider if necessary
+            region='us-west-2'  # Use the region that suits you
+        )
+    )
+pinecone_index = pc.index(index_name)
 
 # Embedding text chunk with SentenceTransformer
 embedding_model = SentenceTransformer('all-MiniLM-L6-v2')
