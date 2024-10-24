@@ -1,5 +1,5 @@
 PyPDF2
-sentence-transformer
+sentence-transformers
 langchain
 pinecone-client
 python-dotenv
