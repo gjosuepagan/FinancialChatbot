@@ -7,7 +7,7 @@ from pinecone import Pinecone, ServerlessSpec
 
 #Connecting Pinecone
 pc = Pinecone(
-        api_key="pcsk_6t5DTe_G5S8dt9DpQQqdXTYeVWrY61j1u4rQa7rXPqLBrmq9YTNpVw9b84cYLuK2j8uX2GY"
+        api_key="pcsk_6t5DTe_G5S8dt9DpQQqdXTYeVWrY61j1u4rQa7rXPqLBrmq9YTNpVw9b84cYLuK2j8uX2G"
     )
 
 index_name = 'pdf-vectorised'
