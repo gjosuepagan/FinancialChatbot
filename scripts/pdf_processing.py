@@ -18,7 +18,7 @@ if index_name not in pc.list_indexes().names():
         metric='cosine',  # Use cosine or another similarity metric
         spec=ServerlessSpec(
             cloud='aws',  # You can change the cloud provider if necessary
-            region='us-west-2'  # Use the region that suits you
+            region='us-east-1'  # Use the region that suits you
         )
     )
 pinecone_index = pc.index(index_name)
