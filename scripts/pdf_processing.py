@@ -5,14 +5,15 @@ import os
 cwd = os.getcwd()
 
 # Raw PDFs folder
-pdf_folder = os.path.join(cwd, 'raw_pdfs')
+raw_pdf_folder = os.path.join(cwd, 'data', 'raw_pdf')
+processed_pdf_folder = os.path.join(cwd, 'data', 'processed_pdf_rag')
 
 # List of pdf in folder
-raw_pdfs = os.listdir(pdf_folder)
+raw_pdfs = os.listdir(raw_pdf_folder)
 
 for pdf in raw_pdfs:
     # Full path to the PDF file
-    pdf_path = os.path.join(pdf_folder, pdf)
+    pdf_path = os.path.join(raw_pdf_folder, pdf)
     
     # Load and extract text from the PDF
     try:
@@ -22,7 +23,7 @@ for pdf in raw_pdfs:
             text += page.extract_text()
 
         # Save processed text for RAG (Retrieval-Augmented Generation)
-        txt_filename = os.path.join(pdf_folder, pdf[:-4] + '.txt')
+        txt_filename = os.path.join(processed_pdf_folder, pdf[:-4] + '.txt')
         with open(txt_filename, 'w', encoding='utf-8') as f:
             f.write(text)
         print(f"Processed and saved: {txt_filename}")
