@@ -27,7 +27,7 @@ kggl_moneybot_model = GemmaCausalLM.from_preset("gemma2_2b_en")
 print("Loaded Gemma model.")
 
 # Load the embedding model
-embedding_model = SentenceTransformer('all-MiniLM-L6-v2')
+embedding_model = SentenceTransformer('all-distilroberta-v1')
 print("Loaded embedding model.")
 
 # Define retriever function
