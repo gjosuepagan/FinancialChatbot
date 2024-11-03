@@ -1,18 +1,13 @@
 import json
 import glob
 import os
+import tensorflow as tf
 from keras_nlp.models import GemmaCausalLM
 from keras.optimizers import Adam
 from sentence_transformers import SentenceTransformer
 import pinecone
 from pinecone import Pinecone, ServerlessSpec
 import numpy as np
-
-# Initialize Pinecone and load the index
-api_key = "your_pinecone_api_key"
-pinecone.init(api_key=api_key, environment="us-east-1")
-index_name = 'pdf-vectorised'
-pinecone_index = pinecone.Index(index_name)
 
 #Connecting Pinecone
 pc = Pinecone(
@@ -26,7 +21,7 @@ if index_name not in pc.list_indexes().names():
 pinecone_index = pc.Index(index_name)
 
 # Load Gemma model
-gemma_lm = GemmaCausalLM.from_preset("gemma2_2b_en")
+kggl_moneybot_model = GemmaCausalLM.from_preset("gemma2_2b_en")
 
 # Load the embedding model (needed to embed the query)
 embedding_model = SentenceTransformer('all-MiniLM-L6-v2')
@@ -94,4 +89,8 @@ for file_path in file_paths:
 optimizer = Adam(learning_rate=5e-5)
 
 # Fine-tune the model using RAG
-fine_tune_rag(retriever, gemma_lm, all_train_data, optimizer, k=4)
+fine_tune_rag(retriever, kggl_moneybot_model, all_train_data, optimizer, k=4)
+
+# Save the fine-tuned model
+kggl_moneybot_model.save("kggl_moneybot_model")
+print("Fine-tuned model saved as 'kggl_moneybot_model'")

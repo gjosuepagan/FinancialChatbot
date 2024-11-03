@@ -3,3 +3,6 @@ sentence-transformers
 langchain
 pinecone-client
 python-dotenv
+keras-nlp
+keras>=3
+tensorflow
